@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+</head>
+<style>
+
+    body{
+      background-image: url(clound1.png);
+      background-size: cover;
+   
+    }
+
+    .headTitle{
+      font-family: Helvetica, sans-serif;
+      color: white;
+      font-style:initial;
+      font-weight: 900;
+    }
+
+    .fontStyle{
+      font-family: Arial , sans-serif;
+      color: rgb(255, 255, 255);
+    }
+
+    .button{
+      background-color: rgba(1,107,168,255);
+      color: rgb(255, 255, 255);
+      font-family: Helvetica, sans-serif;
+      font-weight: 900;
+      border: 2px solid white;
+      width: 12%;
+      border-radius: 10%;
+    }
+
+    input[type=text]{
+      width: 20%;
+      padding: 12px 20px;
+      margin: auto;
+      box-sizing: border-box;
+    }
+
+</style>
+<body>
+        <center><u style="color: white;"><h1 style="font-size:45px;" class="headTitle">Weather Point</h1></u></center>
+        <br>
+      <form action="">
+        <center><input type="text" id="weathercity" placeholder="Enter City Name"></center> 
+        <br>
+        <center><input type="button" value="Fetch" id="searchBtn" class="button"></center>
+        <div>
+
+          <table cellspacing = 20 class="fontStyle">
+            <tr>
+              <td style="color:rgba(9,128,197,255)">............................................. </td>
+              <td><h1 id="displayTemp"></h1></td>
+              <td><img src="" alt="" id="displayDescriptionIcon"></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td><h2 id="displayTempMax"></h2></td>
+              <td><h2 id="displayTempMin"></h2></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td><h1 id="displayDescription"></h1></td>
+              <td></td>
+            </tr>
+          </table>
+
+        </div>
+      </form>
+
+</body>
+<Script src="weather.js"></Script>
+</html>
